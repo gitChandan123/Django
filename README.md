@@ -93,9 +93,8 @@ Creating a virtual environment is recommended to avoid dependency conflicts.
 
 ## Additional Resources
 
+
 - [Django Documentation](https://docs.djangoproject.com/)
 - [Python Installation Guide](https://www.python.org/downloads/)
-
 ---
-
 Congratulations! You have successfully installed Django and set up your first project.
