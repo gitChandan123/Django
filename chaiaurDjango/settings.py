@@ -41,12 +41,15 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'django_browser_reload',
+    'myapp',
 ]
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ['127.0.0.1']
 NPM_BIN_PATH = '/usr/local/bin/npm'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_URL = '/static/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,7 +82,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'chaiaurDjango.wsgi.application'
 
-
+LANGUAGE_CODE = 'en-us'
+TIME_ZONE = 'UTC'
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -87,6 +94,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'name_of_database',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'password',
+        # 'HOST': 'localhost',
+        # 'PORT': 5432,
     }
 }
 
@@ -121,6 +134,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+TIME_ZONE = 'Asia/Kolkata'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
