@@ -1,4 +1,4 @@
-# 🛠️ **Django Installation Guide**
+#  **Django Installation Guide**
 
 This guide will help you install **Django**, a high-level Python web framework, on your local machine in a few simple steps. 🚀
 
